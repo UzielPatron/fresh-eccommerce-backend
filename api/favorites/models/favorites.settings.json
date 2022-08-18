@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorites",
+  "info": {
+    "name": "favorites"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
